@@ -1,0 +1,25 @@
+Copy by value a composite datatype:
+
+There are 3 ways to copy by value for composite data types.
+				=> Using the spread (...) operator. 
+        
+        Example:
+              let a = [1,2,3];
+              let b = [...a];
+   
+				=> Using the Object.assign() method.
+        
+        Example:
+              for object,
+              let a = {15, 7, 100};
+              let b = Object.assign({}, a);
+              
+              for array,
+              let x = [15, 7, 100];
+              let y = Object.assign([], x);
+              
+				=> Using the JSON.stringify() and JSON.parse() methods.
+        
+        Example:
+              let a = [{1, 2, 4}, {14, 6,100}];
+              let b = JSON.parse(JSON.stringify(a)); 
