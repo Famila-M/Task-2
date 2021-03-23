@@ -1,0 +1,19 @@
+Copy by Value VS Copy by Reference:
+
+One of the main differences of composite data type versus primitive data type is that objects(or Arrays) are stored and copied “by reference”, 
+whereas primitive variables are always copied “as a whole value”.
+
+Copy by values takes place in primitive data types where values are directly copied to new variables, Changes takes place in one does not effect another one.
+
+Example: 
+      let n = 20
+      let a = n
+      console.log(a,n) o/p=> 20 20(because data present in n, i.e 20 which is directly copied to a).
+
+Copy by reference takes place in non-primitive data types where values are not copied directly instead it copies address of the memory location.
+
+Example:
+      let user = {name:"Nila",age:23}
+ 		  let a = user;		
+		  a.name = "Changed"
+		  console.log(user.name) o/p => Changed (because we are updating the name in the address so the user object will get effected).
